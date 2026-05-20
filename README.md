@@ -2,7 +2,7 @@
 
 一个也许能“真正解放双手”的全自动 GPT Plus 注册浏览器扩展。
 
-如果这个项目能帮上你，欢迎点个 Star。
+如果这个项目能帮上你，欢迎点个 Star⭐~
 
 > [!IMPORTANT]
 > 目前 OAuth 风控严重，基本必跳手机绑定，所以只推荐走生成无 RT 的 JSON。
@@ -36,15 +36,15 @@
 ## 前提要求
 
 1. 1 个带 API、且能连续正常接收 PayPal 验证码的 US `+1` 接码手机号
-2. 1 个或 N 个支持 `IMAP` 和 `Graph` 的 Outlook 邮箱，或者自建 Cloudflare Temp Email
+2. 1 个或 N 个支持 `IMAP` 和 `Graph` 的 Outlook 邮箱，或者自建 Cloudflare Temp Email / Cloud Mail
 3. 1 个或 N 个支持 GPT 注册的 JP 代理，用于批量轮询
 4. 1 个相对干净、支持 PayPal 注册的 US 代理
 5. 1 个支持分流的代理工具，推荐 Mihomo
 
 > [!NOTE]
-> 自建 Cloudflare Temp Email 需要使用 `edu` 前缀，例如 `edu.openai.com`，才有试用资格。
+> 自建 Cloudflare Temp Email / Cloud Mail 需要使用 `edu` 前缀，例如 `edu.openai.com`，才有试用资格。
 >
-> PayPal 注册代理越干净，越不容易触发 PayPal 注册滑块。账单页面的 Captcha 扩展已经设置了自动屏蔽。
+> PayPal 注册代理越干净，越不容易触发 PayPal 注册滑块。账单页面的 Captcha 扩展已经实现了自动屏蔽。
 
 ## 测试环境
 
@@ -52,7 +52,7 @@
 - 浏览器：Chrome `148.0.7778.168`（64 位正式版），开启无痕模式
 - 网络环境：JP 万人骑代理轮询 + US 自建代理
 
-过程中遇到任何卡死的问题，都可以先停止，然后点击流程的各个节点进行重试，也可以选择旁边的小按钮跳过某个节点。
+过程中遇到任何卡死的问题，都可以先停止，然后点击流程的各个节点进行重试，也可以点击旁边选择跳过。
 
 ## 安装与使用
 

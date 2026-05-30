@@ -790,7 +790,7 @@ def extract_code(text, code_patterns=None):
         except re.error:
             continue
     patterns = [
-        r"(?:代码为|验证码[^0-9]*?)[\s：:]*(\d{6})",
+        r"(?:代码为|验证码[^0-9]*?)[\s�?]*(\d{6})",
         r"(?:log-?in\s+code|enter\s+this\s+code)[^0-9]{0,24}(\d{6})",
         r"code(?:\s+is|[\s:])+(\d{6})",
         r"\b(\d{6})\b",
@@ -861,11 +861,14 @@ class HotmailHelperHandler(BaseHTTPRequestHandler):
     def do_GET(self):
         request_path = urlparse(self.path).path
         if request_path in {"", "/", "/health"}:
+            host, port = self.server.server_address[:2]
             json_response(self, 200, {
                 "ok": True,
                 "service": "hotmail-helper",
                 "version": 1,
                 "time": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
+                "host": host,
+                "port": port,
             })
             return
 
@@ -977,3 +980,4 @@ def main(argv=None):
 
 if __name__ == "__main__":
     main()
+
